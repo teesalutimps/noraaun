@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Profile</title>
+    <style>
+        /* Modern Minimalist Design */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d0d11; /* Clean dark theme */
+            color: #ffffff;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .profile-container {
+            text-align: center;
+            width: 100%;
+            max-width: 580px;
+        }
+
+        /* Avatar Placeholder */
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Elegant gradient */
+            margin: 0 auto 16px auto;
+            border: 3px solid #ffffff;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #a0a0ab;
+            margin: 0 0 32px 0;
+            line-height: 1.5;
+        }
+
+        /* Tap Buttons */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+        }
+
+        .link-btn {
+            background-color: #1a1a24;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            border: 1px solid #2d2d3d;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        /* Hover & Tap State */
+        .link-btn:hover, .link-btn:active {
+            background-color: #ffffff;
+            color: #000000;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Profile details -->
+        <div class="avatar"></div>
+        <h1>@YourUsername</h1>
+        <p class="bio">Welcome to my official hub. Click below to check out my exclusive content and links!</p>
+
+        <!-- Dynamic Action Buttons -->
+        <div class="links-wrapper">
+            
+            <!-- Button 1 -->
+            <div class="link-btn" onclick="goToLink('https://onlyfans.com')">
+                ✨ Access My OnlyFans
+            </div>
+
+            <!-- Button 2 (Optional: add your Twitter/TikTok/etc) -->
+            <div class="link-btn" onclick="goToLink('https://twitter.com')">
+                📸 Follow My Twitter
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Standard JavaScript to route clicks smoothly
+        function goToLink(targetUrl) {
+            window.location.href = targetUrl;
+        }
+    </script>
+
+</body>
+</html>
